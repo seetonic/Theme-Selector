@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --text-color: #eae9fc;
+  --background-color: #010104;
+  --primary-color: #3A31D8;
+  --secoundary-color: #020024;
+  --accent-color: #0600c2;
+}
+
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+}
+
+.controler {
+  display: flex;
+  position: fixed;
+  top: 8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #303030aa;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  min-width: 50%;
+  padding: 0 20px;
+  border-radius: 40px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.themes {
+  border: none;
+  outline: none;
+  color: #eae9fc;
+  min-width: 80px;
+  background-color: #010104;
+  padding: 10px 0;
+  margin: 10px;
+  border-radius: 10px;
+  text-align: center;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 0.9rem;
+}
+
+.text-color,
+.bg-color,
+.primary-color,
+.secondary-color,
+.accent-color {
+  width: 100%;
+  background-color: #010104;
+  padding: 10px 20px;
+  border-radius: 20px;
+  text-align: center;
+  margin: 10px;
+  cursor: pointer;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px;
+  gap: 50px;
+}
+
+.heading{
+  width: 50%;
+}
+
+.heading h1{
+  font-size: 62px;
+  margin-bottom: 20px;
+}
+
+.heading h1 span{
+  color: var(--accent-color);
+}
+
+.heading p{
+  font-size: 16px;
+  width: 80%;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.heading [type=text]{
+  border: none;
+  background-color: #00000020;
+  padding: 15px 30px;
+  border-radius: 6px;
+  font-size: 16px;
+  font-family: "Josefin Sans", sans-serif;
+  outline: none;
+}
+
+.heading [type=button] {
+  padding: 15px 30px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background-color: var(--accent-color);
+  color: var(--text-color);
+  font-size: 16px;
+  cursor: pointer;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.header-img{
+  width: 50%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-template-rows: 1fr 5fr 2fr 1fr;
+  gap: 5px;
+}
+
+.box-1{
+  width: 100%;
+  height: 100%;
+  background-color: var(--secoundary-color);
+  border-radius: 8px;
+}
+
+.box-2{
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+
+.box-3{
+  width: 50%;
+  height: 100%;
+  background-color: var(--secoundary-color);
+  border-radius: 8px;
+}
+
+.box-4{
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  border-radius: 8px;
+}
+
+.box-5{
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-color);
+  border-radius: 8px;
+}
+
+.box-6{
+  width: 100%;
+  height: 50%;
+  background-color: var(--secoundary-color);
+  border-radius: 8px;
+}
+
+.box-7{
+  width: 100%;
+  height: 170%;
+  background-color: var(--secoundary-color);
+  margin-top: -120px;
+  border-radius: 8px;
+}
+
+.box-8{
+  width: 50%;
+  height: 100%;
+  background-color: var(--text-color);
+  border-radius: 8px;
+}
+
+.box-9{
+  width: 100%;
+  height: 100%;
+  background-color: var(--secoundary-color);
+  border-radius: 8px;
+
+}
+
+.box-10{
+  width: 100%;
+  height: 100%;
+  background-color: var(--text-color);
+  border-radius: 8px;
+
+}
+
+.box-11{
+  width: 100%;
+  height: 100%;
+  background-color: var(--background-color);
+  border-radius: 8px;
+
+}
+
+.box-12{
+  width: 138%;
+  height: 100%;
+  background-color: var(--accent-color);
+  border-radius: 8px;
+  margin-left: -50px;
+}
+
+@media only screen and (max-width: 1100px) {
+  .hero{
+    flex-direction: column-reverse;
+    padding: 100px 0 10px 0;
+    gap: 20px;
+  }
+
+  .heading{
+    width: 80%;
+    flex-grow: 2;
+  }
+
+  .heading h1{
+    text-align: center;
+    font-size: 52px;
+    margin-bottom: 10px;
+  }
+
+  .heading p{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .simple-form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-img{
+    height: 60%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+
+  .controler{
+    flex-direction: column;
+    position: relative;
+    top: 40%;
+    border-radius: 0;
+  }
+
+  .hero{
+    padding: 20px 0 20px 0;
+    gap: 40px;
+  }
+
+  .heading h1{
+    font-size: 32px;
+  }
+
+  .input-box{
+    width: 120px;
+    padding: 15px 10px;
+  }
+
+  .input-box::placeholder{
+    font-size: 0.8rem;
+  }
+
+  .heading [type=button] {
+    width: 100px;
+    font-size: 0.8rem;
+    padding: 15px 10px;
+  }
+}

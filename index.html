@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
+    <script defer src="script.js"></script>
+    <title>Theme Selector</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="controler" id="controler">
+        <select name="themes" id="themes" class="themes" onclick="changeTheme()">
+          <option value="cold">Cold</option>
+          <option value="dark" selected>Dark</option>
+          <option value="warm">Warm</option>
+          <option value="gold">Gold</option>
+        </select>
+        <div class="text-color" id="text-color">
+          <p>Text</p><br>
+          <p class="text-color-code"></p>
+        </div>
+        <div class="bg-color" id="bg-color">
+          <p>Background</p><br>
+          <p class="bg-color-code"></p>
+        </div>
+        <div class="primary-color" id="primary-color">
+          <p>Primary</p><br>
+          <p class="primary-color-code"></p>
+        </div>
+        <div class="secondary-color" id="secondary-color">
+          <p>Secondary</p><br>
+          <p class="sec-color-code"></p>
+        </div>
+        <div class="accent-color" id="accent-color">
+          <p>Accent</p><br>
+          <p class="accent-color-code"></p>
+        </div>
+      </div>
+      <header class="hero">
+        <div class="heading">
+          <h1 class="header-heading">
+            Visualize Your <Span class="color-text">Color</Span> Themes On a Real Site
+          </h1>
+          <p class="header-paragraph">
+            Choosing colors pallete for your website? Use the Toolbar above to realize your choices.
+          </p>
+          <div class="simple-form">
+            <input type="text" placeholder="How does it Work?" class="input-box">
+            <input type="button" value="Get Started" class="submit-btn">
+          </div>
+          
+        </div>
+        <div class="header-img">
+          <div class="box-1"></div>
+          <div class="box-2"></div>
+          <div class="box-3"></div>
+          <div class="box-4"></div>
+          <div class="box-5"></div>
+          <div class="box-6"></div>
+          <div class="box-7"></div>
+          <div class="box-8"></div>
+          <div class="box-9"></div>
+          <div class="box-10"></div>
+          <div class="box-11"></div>
+          <div class="box-12"></div>
+        </div>
+      </header>
+    </div>
+  </body>
+</html>
